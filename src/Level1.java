@@ -30,7 +30,7 @@ public class Level1 {
             tempMax = arResInt[i];
             tempStr = arResStr[i];
             for (int j = i + 1; j < M; j++) {
-                if (arResInt[j] > tempMax) {
+                if (arResInt[j] > tempMax || arResStr[j].compareTo(tempStr) < 0) {
                     arResInt[i] = arResInt[j];
                     arResStr[i] = arResStr[j];
                     arResInt[j] = tempMax;
